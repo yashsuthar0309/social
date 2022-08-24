@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/8d0c012fc9.js" crossorigin="anonymous">
+  </script>
+  <title></title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      display: grid;
+      height: 100%;
+      place-items: center;
+      background: #000;
+
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .outer {
+      margin: 10px 50px;
+      background: #111;
+      position: relative;
+    }
+
+    .circle {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 40px;
+
+    }
+
+    .outer button,
+    .outer span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .outer button {
+      background: #111;
+      color: #f2f2f2;
+      outline: none;
+      border: none;
+      font-size: 20px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      z-index: 9;
+    }
+
+    .circle button {
+      height: 60px;
+      width: 60px;
+      background: inherit;
+    }
+
+    .outer span {
+      height: 100%;
+      width: 100%;
+      background: inherit;
+    }
+
+    .circle span {
+      border-radius: 50%;
+    }
+
+    .outer:hover span:nth-child(1) {
+      filter: blue(7px);
+    }
+
+    .outer:hover span:nth-child(2) {
+      filter: blue(14px);
+    }
+
+    .outer:hover {
+      animation: rotate 1.5s linear infinite;
+      background: linear-gradient(#14ffei9, #ffeb3b, #ff00e0);
+    }
+
+    @keyframes rotate {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="outer circle">
+    <button>
+      <a href="https://instagram.com/yash0309?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+    </button>
+
+    <span></span>
+    <span></span>
+  </div>
+
+
+
+    <div class="outer circle">
+      <button>
+        <a href="https://www.facebook.com/yash.suthar.10297/"><i class="fa-brands fa-facebook"></i></a>
+      </button>
+
+      <span></span>
+      <span></span>
+    </div>
+
+
+    <div class="outer circle">
+      <button>
+        <a href="https://yashsuthar0309.github.io/First-website/"><i class="fa-brands fa-github"></i></a>
+      </button>
+
+      <span></span>
+      <span></span>
+    </div>
+
+
+    <div class="outer circle">
+      <button>
+        <a href="https://youtu.be/j8nAHeVKL08"><i class="fa-brands fa-youtube"></i></a>
+      </button>
+
+      <span></span>
+      <span></span>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
